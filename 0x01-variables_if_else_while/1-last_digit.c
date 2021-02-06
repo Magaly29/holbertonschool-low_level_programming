@@ -1,30 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+/* more headers goes there */
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - last digit program
+ * Description: evaluate last digit if greater or less
+ * Return: 0 (sucess)
  */
+/* betty style doc for function main goes there */
 int main(void)
 {
-  int n, m;
+  int n, d;
 
   srand(time(0));
   n = rand() - RAND_MAX / 2;
-  m = n % 10;
-  if ((m > 5) && (m != 0))
+  /* your code goes there */
+  d = n % 10;
+
+  if (d > 5)
     {
-      printf("Last digit of %d is %d and is greater than 5\n", n, m);
+      printf("Last digit of %d is %d and is greater than 5\n", n, d);
     }
-  else if ((m < 6) && (m != 0))
+  else if (d == 0)
     {
-      printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
+      printf("Last digit of %d is %d and is 0\n", n, d);
     }
-  else if (m == 0)
+  else
     {
-      printf("Last digit of %d is %d and is 0\n", n, m);
+      printf("Last digit of %d is %d and is less than 6 and not 0\n", n, d);
     }
   return (0);
  }
