@@ -1,14 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
- * main - Numbers 
- * Description: print numbers 0123456789
- * Return: 0 (sucess)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-  int num;
-  for (num = 0; num <= 9; num++)
-printf("%d", num);
-putchar('\n');
-return (0);
+	int n = 0;
+
+	while (n < 10)
+	{
+		printf("%d", n);
+		n++;
+	}
+	putchar('\n');
+	return (0);
 }
