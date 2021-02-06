@@ -1,20 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
- * main - putchar lowercase alphabet without e and q
- * Description: print alphabet in a message
- * Return: 0 (sucess)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-  char low;
+	int n = 97;
 
-  for (low = 'a'; low <= 'z'; low++)
-    {
-      if (low != 'e' && low != 'q')
+	while (n < 123)
 	{
-	  putchar(low);
+		if ((n != 101) && (n != 113))
+		{
+			putchar(n);
+		}
+		n++;
 	}
-    }
-  putchar('\n');
-  return (0);
+	putchar('\n');
+	return (0);
 }
