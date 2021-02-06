@@ -1,21 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
- * main - putchar lowercase alphabet
- * Description: print alphabet in a message
- * Return: 0 (sucess)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-  char low, upp;
+	int n = 97, m = 65;
 
-  for (low = 'a'; low <= 'z'; low++)
-    {
-      putchar(low);
-    }
-  for (upp = 'A'; upp <= 'Z'; upp++)
-    {
-      putchar(upp);
-    }
-  putchar('\n');
-  return (0);
+	while (n < 123)
+	{
+		putchar(n);
+		n++;
+	}
+	while (m < 91)
+	{
+		putchar(m);
+		m++;
+	}
+	putchar('\n');
+	return (0);
 }
